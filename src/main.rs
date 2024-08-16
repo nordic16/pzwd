@@ -1,6 +1,7 @@
 mod pzwd;
 
-
 fn main() {
-    pzwd::interactive();
+    if let Err(_) = pzwd::interactive() {
+        eprintln!("Invalid input!!!");
+    };
 }
