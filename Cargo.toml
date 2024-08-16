@@ -6,5 +6,4 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.86"
 clap = { version = "4.5.15", features = ["derive"] }
-colour = "2.1.0"
 indicatif = "0.17.8"
