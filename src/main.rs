@@ -1,9 +1,10 @@
 mod pzwd;
+mod crypt;
 
-fn main() {
-    if let Err(e) = pzwd::interactive() {
-        eprintln!("Invalid input!!!");
+fn main() -> anyhow::Result<()> {
+    let val = pzwd::interactive()?;
 
-        println!("{}", e);
-    };
+    println!("{}", val);
+
+    Ok(())
 }
